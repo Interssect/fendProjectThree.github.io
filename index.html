@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Memory game</title>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<script src="jquery-1.9.1.min.js">
+	</script>
+	<script src="timer.jquery.min.js">
+	</script>
+	<script src="game.js">
+	</script>
+	<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet prefetch">
+</head>
+<body>
+	<header>
+		<h1>Memory Game !</h1>
+	</header>
+	<div id="game">
+		<div id="controlls">
+			<span>Size: <select id="size" name="size">
+				<option value="8">
+					small
+				</option>
+				<option value="16">
+					big
+				</option>
+			</select></span> <span>Players: <select id="players" name="players">
+				<option value="1">
+					1
+				</option>
+				<option value="2">
+					2
+				</option>
+			</select></span>
+			<div id="player1div">
+				Player 1: <input id="player1" name="player1"> <span class="moves1">0</span> Move(s)
+			</div>
+			<div class="score-panel">
+				<ul class="stars1">
+					<li><i class="fa fa-star"></i></li>
+					<li><i class="fa fa-star"></i></li>
+					<li><i class="fa fa-star"></i></li>
+				</ul>
+			</div>
+			<div id="player2span">
+				Player 2: <input id="player2" name="player2"> <span class="moves2">0</span> Move(s)
+				<div class="score-panel">
+					<ul class="stars2">
+						<li><i class="fa fa-star"></i></li>
+						<li><i class="fa fa-star"></i></li>
+						<li><i class="fa fa-star"></i></li>
+					</ul>
+				</div>
+			</div><span id="statusSpan">Status: <input id="status" name="status"></span>
+			<div>
+				<div id="timer"></div><button id="NewGame">New game/Restart</button>
+			</div>
+		</div>
+		<div id="board"></div>
+	</div>
+	<div id="modal"></div>
+</body>
+</html>
